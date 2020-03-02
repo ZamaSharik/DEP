@@ -11,10 +11,8 @@ function getMiddle(s) {
     return s;
   }
 
-  if (len % 2 == 0) {
-
+  if (len % 2 === 0) {
     return s.substring(Math.trunc(mid) - 1, Math.trunc(mid) + 1);
   }
-
   return s.substring(Math.trunc(mid), Math.trunc(mid) + 1);
 }
