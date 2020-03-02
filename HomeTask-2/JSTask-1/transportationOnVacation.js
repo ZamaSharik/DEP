@@ -10,12 +10,10 @@ function rentalCarCost(d) {
 
   if(d >= 7) {
     totalAmount = totalAmount - 50;
-    return totalAmount;
   }
 
   else if(d >= 3) {
     totalAmount = totalAmount - 20;
-    return totalAmount;
   }
   return totalAmount;
 }
