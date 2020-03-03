@@ -6,12 +6,7 @@ Problem link: http://www.codewars.com/kata/partition-on
 // at the end, returning the index of the first true value
 function partitionOn(pred, items) {
   var evenItemsCopy = items.filter(pred);
-  var oddItemsCopy = items.filter(
-    function(value) {
-      return !pred(value);
-    }
-  );
-
+  var oddItemsCopy = items.filter(value => !pred(value));
   items.length = 0;
 
   items.push(...oddItemsCopy);
