@@ -1,11 +1,8 @@
 function printResults(response,pageNumber) {
-    console.log(response);
-    var array = response.items;
-    var temp, clone;
+    let array = response.items;
+    let temp, clone;
     prevToken = response.prevPageToken;
     nextToken = response.nextPageToken;
-    console.log(nextToken);
-    console.log(prevToken);
 
     document.querySelector("#mainid").innerHTML = '';
     if (pageNumber===0 || pageNumber === undefined) {
