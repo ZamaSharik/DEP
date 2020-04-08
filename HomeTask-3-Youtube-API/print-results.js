@@ -1,5 +1,5 @@
 function printResults(response,pageNumber) {
-    let array = response.items;
+    let responeArray = response.items;
     let temp, clone;
     prevToken = response.prevPageToken;
     nextToken = response.nextPageToken;
@@ -11,8 +11,8 @@ function printResults(response,pageNumber) {
       document.getElementById("currentPageNumber").value = pageNumber;  
     }
     
-    for (var i = 0; i < array.length; i++) {
-      var item = array[i];
+    for (var i = 0; i < responeArray.length; i++) {
+      var item = responeArray[i];
       temp = document.querySelector("#templateid");
       clone = document.importNode(temp.content, true);
       var image = clone.querySelector("#img");
