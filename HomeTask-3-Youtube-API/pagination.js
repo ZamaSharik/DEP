@@ -10,7 +10,7 @@ function nextPage() {
     });
     
     let place = document.querySelector('#mainid');
-    results.execute(function (response) {
+    results.execute((response) => {
       pageNumber += 1;
       while (place.firstChild) {
         place.removeChild(place.firstChild);
@@ -32,7 +32,7 @@ function nextPage() {
     prevToken = results.prevPageToken;
     let place = document.querySelector('#mainid');
     console.log(prevToken);
-    results.execute(function (response) {
+    results.execute((response) => {
       pageNumber -= 1;
       while (place.firstChild) {
         place.removeChild(place.firstChild);
